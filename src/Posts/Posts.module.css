@@ -1,0 +1,215 @@
+/* ALL POSTS CSS */
+.mainDiv, .newPost
+{
+  background-color: #343a40;
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  /* padding: 2rem 0; */
+  justify-content: center;
+  align-items: center
+}
+.allPosts
+{
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+  width: 95%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.allPosts h3
+{
+  justify-self: center;
+  margin: 0;
+}
+.allPosts div
+{
+  position: absolute;
+  top: 40px;
+  left: -1px;
+  width: 100%;
+  background-color: darkcyan;
+  border: 2px solid white;
+  z-index: 10;
+}
+.allPosts div option
+{
+  padding: .75rem;
+  border: 2px solid white;
+}
+.allPosts th
+{
+  border: 2px solid gainsboro;
+  height: 30px;
+}
+.allPosts tr
+{
+  border: 2px solid gainsboro;
+  height: 50px;
+  margin: 3px 0;
+}
+.allPosts tr td {text-align: center;}
+
+.onePost
+{
+  background-color: darkcyan;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.onePost h5
+{
+  grid-column: 1/3;
+  margin: 10px 0;
+}
+.onePost h4
+{
+  margin: 10px 0;
+}
+.DeleteBtn, .pageOffset
+{
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+  background-color: #dc3545;
+  cursor: pointer;
+}
+.pageOffset
+{
+  position: relative;
+  max-width: 200px;
+  justify-self: end;
+  background: darkcyan;
+}
+.onePost a, .postLink
+{
+  text-decoration: none !important;
+  color: black !important;
+}
+.DeleteBtn:disabled
+{
+  opacity: .5;
+  cursor: pointer;
+}
+.Modal 
+{
+  width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+.Modal button
+{
+  width: 100px;
+  padding: 10px 0;
+  color: white;
+  margin: 0 5px ;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+}
+.Modal button:first-of-type
+{
+  background-color: #dc3545;
+}
+
+/* NEW POST CSS */
+
+.newPost
+{
+  flex-direction: row;
+  align-items: flex-start;
+}
+.newPost form
+{
+  margin-top: 3rem;
+  background-color: darkcyan;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+  width: 95%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+  row-gap: 1.5rem;
+}
+.newPost form h3{ margin: 10px 0; justify-self: center;}
+.newPost form textarea
+{
+  border-radius: 5px;
+}
+.newPost form button
+{
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #5cb85c;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+}
+.newPost form button:disabled
+{
+  background-color: #dc3545;
+  opacity: .65;
+  cursor: pointer;
+}
+
+/* ONE POST CSS */
+
+.outerDiv
+{
+  background-color: darkcyan;
+  width: 90%;
+  border-radius: 5px;
+  max-width: 600px;
+  padding-bottom: 1rem;
+}
+.onePost
+{
+  padding: 1rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  width: fit-content;
+  margin: auto;
+}
+.onePost h2
+{
+  justify-self: center;
+}
+.onePost div
+{
+  display: flex;
+  align-items: center;
+}
+.onePost div p
+{
+  margin-left: 1rem;
+}
+.onePost a
+{
+  background-color: green;
+  width: 100%;
+  text-align: center;
+  padding: .75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+.onePost a:hover
+{
+  background-color: rgb(50, 73, 16);
+}

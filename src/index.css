@@ -1,0 +1,64 @@
+body {
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.NOTFICATION
+{
+  top: 75px !important;
+  right: 10px !important;
+}
+.forRdO
+{
+  width: 95% !important;
+  border-radius: 5px !important;
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a{
+  background-color:darkcyan !important;
+  border-color: #47ccde ;
+  color: #fff;
+  border-radius: 50%;
+}
+.pagination > li > a{
+  /* border: 1px solid #47ccde ; */
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer; 
+  margin: 0 5px;
+  font-size: large;
+  width: 50px;
+  height: 50px;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #47ccde ;
+  border-color: #47ccde;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: darkcyan
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.mainDiv
+{
+  background-color: #343a40;
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

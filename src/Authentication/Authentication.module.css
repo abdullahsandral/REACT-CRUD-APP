@@ -1,0 +1,62 @@
+.mainDiv
+{
+  background-color: #343a40;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainDiv form
+{
+  background-color: darkcyan;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+  width: 95%;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+  row-gap: 1.5rem;
+  /* padding-bottom: 3rem; */
+}
+.mainDiv form h3 
+{
+  justify-self: center;
+  margin: 0;
+}
+.mainDiv form button
+{
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #5cb85c;
+  font-weight: 800;
+  margin-top: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.mainDiv form button:hover
+{
+  background-color: #226522;
+}
+.mainDiv form button:disabled
+{
+  background-color: #d52626;
+  opacity: .55;
+}
+.mainDiv form p
+{
+  justify-self: right;
+  margin: .5rem 0;
+}
+.mainDiv form p a
+{
+  color: blue;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.mainDiv form p a:hover
+{
+  color: #00ce52cd;
+  text-decoration: none;
+}
